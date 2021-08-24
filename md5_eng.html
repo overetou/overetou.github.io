@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ft_ssl_md5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<p class="title">ft_ssl_md5 (C)</p>
+				<nav>
+					<ul>
+						<li><a href="index.html#one">Home</a></li>
+						<!-- <li><a href="generic.html" class="active">Generic</a></li> -->
+						<!-- <li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Cryptographie.</h1>
+							<p>
+								Le but du projet est de reproduire les algorithmes de <a href="https://fr.wikipedia.org/wiki/Fonction_de_hachage">hash</a>
+								<a href="https://fr.wikipedia.org/wiki/MD5">md5</a> et <a href="https://fr.wikipedia.org/wiki/SHA-2">sha256</a>.
+								Dans l'image de dessous, mon programme (./ft_ssl) et la commande de hash de linux (sha256sum) calculent tous deux l'empreinte sha256 du fichier "file.txt".
+								On peut constater qu'elles sont identiques.
+							</p>
+							</p><span><img src="images/ft_ssl_md5_demo1.png" alt="" /></span>
+							<p>
+								Le programme supporte toute sorte de fichier, y compris les binaires et les fichiers de plusieurs gigas. Dans l'exemple suivant, md5 est lancé sur l'exécutable "ft_ssl".
+								Comme avant, on lance notre implémentation puis celle de Linux afin de pouvoir comparer les résultats.
+							</p>
+							<span><img src="images/md5_binary.png" alt=""></span>
+							<p>
+								Le dernier exemple montre que le hashing de fichiers volumineux est exact: On lance les programmes de hash sur une image de système d'exploitation.
+								Les résultats sont identiques. La dernière commande, "du", affiche le poids du fichier, soit 1.9 Go.
+							</p>
+							<span><img src="images/mdshabig.png" alt=""></span>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Original Template Designer: <a href="http://html5up.net">HTML5 UP</a> (Hyperspace)</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

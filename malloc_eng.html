@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Malloc</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<p class="title">Malloc (C)</p>
+				<nav>
+					<ul>
+						<li><a href="index.html#one">Home</a></li>
+						<!-- <li><a href="generic.html" class="active">Generic</a></li> -->
+						<!-- <li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Reprodution de la fonction standard d'allocation de mémoire en C.</h1>
+							<!-- <span class="image fit"><img src="images/scop_demo.gif" alt="" /></span> -->
+							<p>Ce projet introduit la façon dont le système gère la mémoire allouée dynamiquement lors de l'exécution d'un programme de C, ou tout autre programme qui s'appuie sur le C à
+								un certain point. Concrètement, la tâche consiste à apprendre les appels systèmes fondamentaux qui allouent de la mémoire en bloc et à créer des
+								fonctions permettant de distribuer des sous-parties de ces blocs à la demande. Pour ce faire, il est indispensable de comprendre comment le système exploite la mémoire brute.
+							</p>
+							<p>Pour tester une implémentation de malloc, il est possible d'utiliser la fonction à la place de l'original dans un programme déjà compilé. N'ayant pas reproduit tous les appels
+								associés à mallocs, les programmes s'appuyant sur des frameworks complexes ne marchent généralement pas, en revanche
+								l'implémentation supporte sans problème des programmes en ligne de commande tels que ls, htop, git, vim et d'autres.
+							</p>
+							<div><img src="images/malloc1.png" alt="">
+								<img src="images/malloc2.png" alt="">
+								<img src="images/malloc3.png" alt="">
+								<img src="images/malloc4.png" alt=""></div>
+								<p>Tous les exemples ci-dessus utilisent mon implémentation de malloc. <br>
+									De gauche à droite et de bas en haut: la commande "ls" lancée sur la racine du projet;
+									vim (un éditeur de texte en ligne de commande); htop (moniteur système en ligne de commande) et le programme "man" affichant la page de manuel de la fonction malloc.
+								</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Original Template Designer: <a href="http://html5up.net">HTML5 UP</a> (Hyperspace)</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
