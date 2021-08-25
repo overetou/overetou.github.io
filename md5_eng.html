@@ -19,7 +19,7 @@
 				<p class="title">ft_ssl_md5 (C)</p>
 				<nav>
 					<ul>
-						<li><a href="index.html#one">Home</a></li>
+						<li><a href="index_eng.html">Home</a></li>
 						<!-- <li><a href="generic.html" class="active">Generic</a></li> -->
 						<!-- <li><a href="elements.html">Elements</a></li> -->
 					</ul>
@@ -32,22 +32,21 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Cryptographie.</h1>
+							<h1 class="major">Cryptography.</h1>
 							<p>
-								Le but du projet est de reproduire les algorithmes de <a href="https://fr.wikipedia.org/wiki/Fonction_de_hachage">hash</a>
-								<a href="https://fr.wikipedia.org/wiki/MD5">md5</a> et <a href="https://fr.wikipedia.org/wiki/SHA-2">sha256</a>.
-								Dans l'image de dessous, mon programme (./ft_ssl) et la commande de hash de linux (sha256sum) calculent tous deux l'empreinte sha256 du fichier "file.txt".
-								On peut constater qu'elles sont identiques.
+								The goal of the project is to reproduce algorithms of <a href="https://fr.wikipedia.org/wiki/Fonction_de_hachage">hash</a>:
+								<a href="https://fr.wikipedia.org/wiki/MD5">md5</a> and <a href="https://fr.wikipedia.org/wiki/SHA-2">sha256</a>.
+								In the image below, my program (./ft_ssl) and the official linux hash command (sha256sum) both process the sha256 sum of the file "file.txt".
+								We can see that they are identical.
 							</p>
 							</p><span><img src="images/ft_ssl_md5_demo1.png" alt="" /></span>
 							<p>
-								Le programme supporte toute sorte de fichier, y compris les binaires et les fichiers de plusieurs gigas. Dans l'exemple suivant, md5 est lancé sur l'exécutable "ft_ssl".
-								Comme avant, on lance notre implémentation puis celle de Linux afin de pouvoir comparer les résultats.
+								The program supports every file format, binary comprised. You can also hash large files (several gigas). In the next example, md5 is launched upon the executable "ft_ssl"
+								itself. Like before, we use both mine and the official implementations of the algorithm so that we can compare the results.
 							</p>
 							<span><img src="images/md5_binary.png" alt=""></span>
-							<p>
-								Le dernier exemple montre que le hashing de fichiers volumineux est exact: On lance les programmes de hash sur une image de système d'exploitation.
-								Les résultats sont identiques. La dernière commande, "du", affiche le poids du fichier, soit 1.9 Go.
+							<p>The last example shows that the hashing of large files is correct: we launch the programs on a the image of a full OS. The results are identical.
+								The last command, "du", displays the size of the file: 1.9 Go.
 							</p>
 							<span><img src="images/mdshabig.png" alt=""></span>
 						</div>
