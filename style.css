@@ -102,9 +102,8 @@ a {
 	color: #555555;
 }
 
-#login-button {
+.login-button {
 	font-size: 1.2em;
-	text-decoration: underline;
 }
 
 .product-name {
